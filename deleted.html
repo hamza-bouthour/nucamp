@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" /> ​
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/styles.css" /> ​
+    <title>NuCamp: A Better Way To Camp</title>
+</head>
+<body>
+            <div class="row row-content align-items-center">
+            <div class="col col-sm-6 mx-auto">
+                <div class="card">
+                    <h3 class="card-header text-white bg-info">Reserve a Campsite</h3>
+                    <div class="card-body">
+                        <form id="reserveForm" >
+                            <div class="row form-group">
+                                <label class="col-sm-6 col-xs-12 col-form-label" for="nuCampers">Number of Campers</label>
+                                <div class="col">
+                                    <select name="nuCampers" id="nuCampers" class="form-control">
+                                        <option value="">Select..</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row form-group">
+                                <label for="date" class="col-sm-6 col-xs-12 col-form-label">Date</label>
+                                <div class="col-sm-6">
+                                    <input type="date" name="date" id="date" placeholder="date" class="form-control">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <button type="button" class="btn btn-primary">Search</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#reserveForm" role="button" class="btn btn-lg btn-info" data-toggle="tooltip" title="Or call us at <br /><strong>1-200-555-1234</strong>" data-html="true" data-placement="bottom">Reserve Campsite</a>
+        <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+        <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
